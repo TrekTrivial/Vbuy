@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="VBuy is an web platform where users can sell their used books at a reasonable price."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>VBuy.com &mdash; Place order</title>
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/placeorder.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <section class="place-container">
+      <p class="place-heading">Place order</p>
+
+      <div class="sub-place-container">
+        <div class="address-container info-container">
+          <label class="address-label">Shipping to</label>
+          <p class="address"></p>
+        </div>
+
+        <div class="cart-id-container info-container">
+          <label class="cart-id-label">Cart ID</label>
+          <p class="cart-id"></p>
+        </div>
+
+        <div class="item-desc-container info-container">
+          <p class="item-desc-text">Item description</p>
+          <table class="items-table">
+            <tr>
+              <th>S.no</th>
+              <th>ISBN</th>
+              <th>Title & Author</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </table>
+        </div>
+
+        <div class="order-count-container">
+          <label class="order-count-label">Total items</label>
+          <p class="order-count"></p>
+        </div>
+
+        <div class="order-total-container">
+          <label class="order-total-label">Order total</label>
+          <p class="order-total"></p>
+        </div>
+
+        <div class="place-btns">
+          <a href="/cart" class="cancel-btn">Cancel</a>
+          <a href="" class="place-order-btn">Place order</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="js/header_footer.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/placeorder.js"></script>
+  </body>
+</html>

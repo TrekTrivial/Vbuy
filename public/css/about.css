@@ -1,0 +1,46 @@
+.about-container {
+  max-width: 50rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #edebed;
+  padding: 2rem;
+  color: #252525;
+  border-radius: 0.7rem;
+  min-height: 30rem;
+  box-shadow: 0 0.5rem 10px rgba(0, 0, 0, 0.15);
+}
+
+label {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.about-heading {
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+}
+
+.sub-about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sub-about-container p {
+  margin-top: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+.about-us span {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.vbuy-logo {
+  width: 15rem;
+  margin-top: 1rem;
+}

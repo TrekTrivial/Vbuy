@@ -1,0 +1,95 @@
+.ticket-container {
+  max-width: 100rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #edebed;
+  padding: 2rem;
+  color: #252525;
+  border-radius: 0.7rem;
+  min-height: 15rem;
+  box-shadow: 0 0.5rem 10px rgba(0, 0, 0, 0.15);
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  font-weight: 500;
+}
+
+.ticket-heading {
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+}
+
+.ticket-subject-container,
+.ticket-message-container,
+.ticket-reply-container,
+.ticket-status-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.ticket-subject-container label,
+.ticket-message-container label,
+.ticket-reply-container label,
+.ticket-status-container label {
+  width: 7rem;
+}
+
+.ticket-subject-container p,
+.ticket-message-container p,
+.ticket-reply-container p,
+.ticket-status-container p {
+  width: 30rem;
+}
+
+.ticket-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.new-ticket-btn {
+  align-self: center;
+  background: #008d00;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.3rem;
+  transition: all 0.2s;
+  margin-left: 1rem;
+}
+
+.new-ticket-btn:link,
+.new-ticket-btn:visited {
+  color: white;
+  font-weight: 600;
+}
+
+.new-ticket-btn:hover {
+  background: #007600;
+}
+
+.all-tickets-btn {
+  background: #00b000;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.8rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  width: fit-content;
+}
+
+.all-tickets-btn:link,
+.all-tickets-btn:visited {
+  color: white;
+}
+
+.all-tickets-btn:hover {
+  background: #009000;
+}

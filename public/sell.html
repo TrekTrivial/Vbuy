@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="VBuy is an web platform where users can sell their used books at a reasonable price."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>VBuy.com &mdash; Sell a book</title>
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/sell.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <section class="sell-container">
+      <p class="sell-heading">Sell a book</p>
+
+      <div class="sub-sell-container">
+        <div class="search-bar-container">
+          <input
+            class="search-bar"
+            type="search"
+            placeholder="Search by title, author, ISBN"
+          />
+          <a href="" class="search-btn"
+            ><img src="img/search.png" alt="Search" class="search-icon"
+          /></a>
+        </div>
+
+        <div class="search-results-container"></div>
+
+        <p class="contact-us-text" style="font-size: 0.9rem">
+          <a href="/support">Contact us</a> if you don't see a price for your
+          book
+        </p>
+
+        <div class="pagination">
+          <button id="prev-btn" class="btn" disabled>Previous</button>
+          <button id="next-btn" class="btn">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="js/common.js"></script>
+    <script src="js/header_footer.js"></script>
+    <script src="js/sell.js"></script>
+  </body>
+</html>

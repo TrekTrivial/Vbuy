@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="VBuy is an web platform where users can sell their used books at a reasonable price."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>VBuy.com &mdash; Order</title>
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/order.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <section class="order-container">
+      <p class="order-heading">Order</p>
+
+      <div class="sub-order-container">
+        <div class="order-id-container info-container">
+          <label class="order-id-label">Order ID</label>
+          <p class="order-id"></p>
+        </div>
+
+        <div class="order-date-container info-container">
+          <label class="order-date-label">Order date</label>
+          <p class="order-date"></p>
+        </div>
+
+        <div class="address-container info-container">
+          <label class="address-label">Shipping from</label>
+          <p class="address"></p>
+        </div>
+
+        <div class="order-status-container info-container">
+          <label class="order-status-label">Order status</label>
+          <p class="order-status"></p>
+        </div>
+
+        <div class="item-desc-container info-container">
+          <p class="item-desc-text">Item description</p>
+          <table class="items-table">
+            <tr>
+              <th>S.no</th>
+              <th>ISBN</th>
+              <th>Title & Author</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </table>
+        </div>
+
+        <div class="ship-container info-container">
+          <label class="ship-label">Shipper's order ID</label>
+          <p class="ship"></p>
+        </div>
+
+        <div class="awb-container info-container">
+          <label class="awb-label">AWB number</label>
+          <p class="awb"></p>
+        </div>
+
+        <div class="awb-name-container info-container">
+          <label class="awb-name-label">Transporter</label>
+          <p class="awb-name"></p>
+        </div>
+
+        <div class="ship-status-container info-container">
+          <label class="ship-status-label">Shipping status</label>
+          <p class="ship-status"></p>
+        </div>
+
+        <div class="order-count-container">
+          <label class="order-count-label">Total items</label>
+          <p class="order-count"></p>
+        </div>
+
+        <div class="order-total-container">
+          <label class="order-total-label">Order total</label>
+          <p class="order-total"></p>
+        </div>
+
+        <div class="payment-container">
+          <!-- <a href="" class="payment-info-btn">Payment info</a> -->
+
+          <a href="" class="invoice-btn" target="_blank"
+            ><img
+              src="img/download.gif"
+              alt="Download animation"
+              class="download"
+            />Invoice</a
+          >
+        </div>
+
+        <div class="order-btns">
+          <a href="" class="cancel-order-btn">Cancel order</a>
+          <a href="" class="track-order-btn" target="_blank">Track</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="js/header_footer.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/order.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="VBuy is an web platform where users can sell their used books at a reasonable price."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>VBuy.com &mdash; Cart</title>
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/general.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <div class="cart-container">
+      <p class="cart-heading">Cart</p>
+
+      <div class="empty-cart">
+        <p>Your cart is empty.</p>
+      </div>
+
+      <div class="sub-cart-container">
+        <div class="cart-id-container">
+          <p class="cart-id-text">Cart ID</p>
+          <p class="cart-id"></p>
+        </div>
+
+        <div class="cart-table-container">
+          <table class="cart-table">
+            <tr>
+              <th>S.no</th>
+              <th>ISBN</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Quantity</th>
+              <th>MRP</th>
+              <th>VBuy price</th>
+              <th>Total</th>
+              <th>Remove</th>
+            </tr>
+          </table>
+
+          <div class="cart-value-container">
+            <p class="cart-value-text">Total cart value</p>
+            <p class="cart-value"></p>
+          </div>
+
+          <div class="cart-btns">
+            <a href="" class="del-cart-btn">Delete cart</a>
+            <a href="/placeorder" class="checkout-btn">Proceed to checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="js/header_footer.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

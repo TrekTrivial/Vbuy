@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="VBuy is an web platform where users can sell their used books at a reasonable price."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>VBuy.com &mdash; Dashboard</title>
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <section class="dashb-container">
+      <p class="dashb-heading">Dashboard</p>
+
+      <div class="sub-dashb-container">
+        <div class="tabs-container">
+          <a href="" class="profile-tab">Profile</a>
+          <a href="" class="orders-tab">Orders</a>
+          <a href="" class="tickets-tab">Tickets</a>
+          <a href="" class="settings-tab">Settings</a>
+        </div>
+
+        <div id="profile" class="profile-container tab">
+          <div class="prof-tabs-container">
+            <a href="" class="acc-details-tab">Account details</a>
+            <a href="" class="addr-tab">Address</a>
+            <a href="" class="bank-tab">Bank details</a>
+          </div>
+
+          <div class="prof-container">
+            <div class="sub-prof-container">
+              <div class="name-container info-container">
+                <label class="name-label">Name</label>
+                <p></p>
+              </div>
+
+              <div class="email-container info-container">
+                <label class="email-label">Email</label>
+                <input autocomplete="off" type="email" class="email" disabled />
+                <a href="" class="change-email">Edit</a>
+                <a href="" class="otp-btn" style="pointer-events: none"
+                  >Confirm</a
+                >
+              </div>
+
+              <p class="error email-error" style="visibility: hidden">
+                <svg
+                  class="error-icon"
+                  fill="#000000"
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 21.063v-15.063c0-0.563 0.438-1 1-1s1 0.438 1 1v15.063h-2zM15 23.031h2v1.875h-2v-1.875zM0 16c0-8.844 7.156-16 16-16s16 7.156 16 16-7.156 16-16 16-16-7.156-16-16zM30.031 16c0-7.719-6.313-14-14.031-14s-14 6.281-14 14 6.281 14 14 14 14.031-6.281 14.031-14z"
+                  ></path></svg
+                ><span></span>
+              </p>
+
+              <div class="mobile-container info-container">
+                <label class="mobile-label">Mobile</label>
+                <input autocomplete="off" type="tel" class="mobile" disabled />
+                <a href="" class="change-mobile">Edit</a>
+                <a href="" class="mobile-btn" style="pointer-events: none"
+                  >Confirm</a
+                >
+              </div>
+
+              <p class="error mobile-error" style="visibility: hidden">
+                <svg
+                  class="error-icon"
+                  fill="#000000"
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 21.063v-15.063c0-0.563 0.438-1 1-1s1 0.438 1 1v15.063h-2zM15 23.031h2v1.875h-2v-1.875zM0 16c0-8.844 7.156-16 16-16s16 7.156 16 16-7.156 16-16 16-16-7.156-16-16zM30.031 16c0-7.719-6.313-14-14.031-14s-14 6.281-14 14 6.281 14 14 14 14.031-6.281 14.031-14z"
+                  ></path></svg
+                ><span></span>
+              </p>
+
+              <div class="pwd-container info-container">
+                <label class="pwd-label">Password</label>
+                <a href="" class="change-pwd">Change password</a>
+              </div>
+            </div>
+
+            <div class="prof-change-container">
+              <div class="otp-container">
+                <p class="otp-text">
+                  An OTP has been sent to your updated email address.<br />It is
+                  valid for 5 minutes.
+                </p>
+                <label class="otp-label">One-Time Password (OTP)</label>
+                <div class="sub-otp-container">
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    class="otp otp-1"
+                    placeholder="X"
+                  />
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    class="otp otp-2"
+                    placeholder="X"
+                  />
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    class="otp otp-3"
+                    placeholder="X"
+                  />
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    class="otp otp-4"
+                    placeholder="X"
+                  />
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    class="otp otp-5"
+                    placeholder="X"
+                  />
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    class="otp otp-6"
+                    placeholder="X"
+                  />
+                </div>
+
+                <p class="error otp-error" style="visibility: hidden">
+                  <svg
+                    class="error-icon"
+                    fill="#000000"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 32 32"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 21.063v-15.063c0-0.563 0.438-1 1-1s1 0.438 1 1v15.063h-2zM15 23.031h2v1.875h-2v-1.875zM0 16c0-8.844 7.156-16 16-16s16 7.156 16 16-7.156 16-16 16-16-7.156-16-16zM30.031 16c0-7.719-6.313-14-14.031-14s-14 6.281-14 14 6.281 14 14 14 14.031-6.281 14.031-14z"
+                    ></path></svg
+                  ><span></span>
+                </p>
+
+                <div class="otp-btns">
+                  <a href="" class="verify-otp-btn">Verify</a>
+                  <img
+                    src="img/tick.gif"
+                    alt="Tick mark animation"
+                    class="tick-mark otp-tick"
+                    hidden
+                  />
+                </div>
+              </div>
+
+              <div class="pwd-change-container">
+                <label class="old-pwd-label">Old password</label>
+                <input
+                  type="password"
+                  <input
+                  autocomplete="off"
+                  type="password"
+                  class="old-pwd"
+                />
+
+                <div class="verify-btns">
+                  <a href="" class="pwd-verify-btn">Verify</a>
+                  <img
+                    src="img/tick.gif"
+                    alt="Tick mark animation"
+                    class="tick-mark pwd-tick"
+                    hidden
+                  />
+                </div>
+
+                <p class="error old-pwd-error" style="visibility: hidden">
+                  <svg
+                    class="error-icon"
+                    fill="#000000"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 32 32"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 21.063v-15.063c0-0.563 0.438-1 1-1s1 0.438 1 1v15.063h-2zM15 23.031h2v1.875h-2v-1.875zM0 16c0-8.844 7.156-16 16-16s16 7.156 16 16-7.156 16-16 16-16-7.156-16-16zM30.031 16c0-7.719-6.313-14-14.031-14s-14 6.281-14 14 6.281 14 14 14 14.031-6.281 14.031-14z"
+                    ></path></svg
+                  ><span></span>
+                </p>
+
+                <label class="new-pwd-label">New password</label>
+                <input
+                  type="password"
+                  <input
+                  autocomplete="off"
+                  type="password"
+                  class="new-pwd"
+                  disabled
+                />
+
+                <p class="error new-pwd-error" style="visibility: hidden">
+                  <svg
+                    class="error-icon"
+                    fill="#000000"
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 32 32"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15 21.063v-15.063c0-0.563 0.438-1 1-1s1 0.438 1 1v15.063h-2zM15 23.031h2v1.875h-2v-1.875zM0 16c0-8.844 7.156-16 16-16s16 7.156 16 16-7.156 16-16 16-16-7.156-16-16zM30.031 16c0-7.719-6.313-14-14.031-14s-14 6.281-14 14 6.281 14 14 14 14.031-6.281 14.031-14z"
+                    ></path></svg
+                  ><span></span>
+                </p>
+
+                <label class="new-cfm-pwd-label">Confirm new password</label>
+                <input
+                  type="password"
+                  <input
+                  autocomplete="off"
+                  type="password"
+                  class="new-cfm-pwd"
+                  disabled
+                />
+
+                <div class="pwd-btns">
+                  <a href="" class="pwd-cancel-btn">Cancel</a>
+                  <a href="" class="pwd-change-btn" style="pointer-events: none"
+                    >Confirm</a
+                  >
+                  <img
+                    src="img/tick.gif"
+                    alt="Tick mark animation"
+                    class="tick-mark new-pwd-tick"
+                    hidden
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="address-container">
+            <div class="street-container info-container">
+              <label class="street-label">Street</label>
+              <input autocomplete="off" type="text" class="street" disabled />
+            </div>
+
+            <div class="city-container info-container">
+              <label class="city-label">City</label>
+              <input autocomplete="off" type="text" class="city" disabled />
+            </div>
+
+            <div class="state-container info-container">
+              <label class="state-label">State</label>
+              <select class="state" name="state" disabled>
+                <option value="" disabled selected>Select state</option>
+                <option value="Andaman and Nicobar Islands">
+                  Andaman and Nicobar Islands
+                </option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Dadra and Nagar Haveli and Daman and Diu">
+                  Dadra and Nagar Haveli and Daman and Diu
+                </option>
+                <option value="Delhi">Delhi</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+              </select>
+            </div>
+
+            <div class="pincode-container info-container">
+              <label class="pincode-label">Pincode</label>
+              <input autocomplete="off" type="text" class="pincode" disabled />
+            </div>
+
+            <div class="address-btns">
+              <a href="" class="address-btn">Edit</a>
+              <a href="" class="address-cfm-btn" style="pointer-events: none"
+                >Confirm</a
+              >
+              <img
+                src="img/tick.gif"
+                alt="Tick mark animation"
+                class="tick-mark addr-tick"
+                hidden
+              />
+            </div>
+          </div>
+
+          <div class="bank-container">
+            <div class="bank-type-container info-container">
+              <label class="bank-type-label">Type</label>
+              <p>Bank account</p>
+            </div>
+
+            <div class="bank-acc-container">
+              <div class="acc-no-container info-container">
+                <label class="acc-no-label">Account number</label>
+                <input autocomplete="off" type="text" class="acc-no" disabled />
+              </div>
+
+              <p class="error acc-no-error" style="visibility: hidden">
+                <svg
+                  class="error-icon"
+                  fill="#000000"
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 21.063v-15.063c0-0.563 0.438-1 1-1s1 0.438 1 1v15.063h-2zM15 23.031h2v1.875h-2v-1.875zM0 16c0-8.844 7.156-16 16-16s16 7.156 16 16-7.156 16-16 16-16-7.156-16-16zM30.031 16c0-7.719-6.313-14-14.031-14s-14 6.281-14 14 6.281 14 14 14 14.031-6.281 14.031-14z"
+                  ></path></svg
+                ><span></span>
+              </p>
+
+              <div class="acc-name-container info-container">
+                <label class="acc-name-label">Account holder name</label>
+                <input
+                  autocomplete="off"
+                  type="text"
+                  class="acc-name"
+                  disabled
+                />
+              </div>
+
+              <p class="error acc-name-error" style="visibility: hidden">
+                <svg
+                  class="error-icon"
+                  fill="#000000"
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 21.063v-15.063c0-0.563 0.438-1 1-1s1 0.438 1 1v15.063h-2zM15 23.031h2v1.875h-2v-1.875zM0 16c0-8.844 7.156-16 16-16s16 7.156 16 16-7.156 16-16 16-16-7.156-16-16zM30.031 16c0-7.719-6.313-14-14.031-14s-14 6.281-14 14 6.281 14 14 14 14.031-6.281 14.031-14z"
+                  ></path></svg
+                ><span></span>
+              </p>
+
+              <div class="ifsc-container info-container">
+                <label class="ifsc-label">IFS code</label>
+                <input autocomplete="off" type="text" class="ifsc" disabled />
+                <a href="" class="ifsc-verify-btn" style="pointer-events: none"
+                  >Verify</a
+                >
+              </div>
+
+              <p class="error ifsc-error" style="visibility: hidden">
+                <svg
+                  class="error-icon"
+                  fill="#000000"
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 21.063v-15.063c0-0.563 0.438-1 1-1s1 0.438 1 1v15.063h-2zM15 23.031h2v1.875h-2v-1.875zM0 16c0-8.844 7.156-16 16-16s16 7.156 16 16-7.156 16-16 16-16-7.156-16-16zM30.031 16c0-7.719-6.313-14-14.031-14s-14 6.281-14 14 6.281 14 14 14 14.031-6.281 14.031-14z"
+                  ></path></svg
+                ><span></span>
+              </p>
+
+              <div class="branch-container info-container">
+                <label class="branch-label">Bank & Branch</label>
+                <input autocomplete="off" type="text" class="branch" disabled />
+                <img
+                  src="img/tick.gif"
+                  alt="Tick mark animation"
+                  class="tick-mark ifsc-tick"
+                  hidden
+                />
+              </div>
+            </div>
+
+            <div class="vpa-container">
+              <div class="vpa-id-container info-container">
+                <label class="vpa-id-label">VPA ID</label>
+                <input autocomplete="off" type="text" class="vpa" disabled />
+              </div>
+
+              <p class="error vpa-error" style="visibility: hidden">
+                <svg
+                  class="error-icon"
+                  fill="#000000"
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 21.063v-15.063c0-0.563 0.438-1 1-1s1 0.438 1 1v15.063h-2zM15 23.031h2v1.875h-2v-1.875zM0 16c0-8.844 7.156-16 16-16s16 7.156 16 16-7.156 16-16 16-16-7.156-16-16zM30.031 16c0-7.719-6.313-14-14.031-14s-14 6.281-14 14 6.281 14 14 14 14.031-6.281 14.031-14z"
+                  ></path></svg
+                ><span></span>
+              </p>
+
+              <div class="branch-container info-container">
+                <label class="vpa-name-label">Verified name</label>
+                <input
+                  autocomplete="off"
+                  type="text"
+                  class="vpa-name"
+                  disabled
+                />
+              </div>
+
+              <p class="error vpa-name-error" style="visibility: hidden">
+                <svg
+                  class="error-icon"
+                  fill="#000000"
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 21.063v-15.063c0-0.563 0.438-1 1-1s1 0.438 1 1v15.063h-2zM15 23.031h2v1.875h-2v-1.875zM0 16c0-8.844 7.156-16 16-16s16 7.156 16 16-7.156 16-16 16-16-7.156-16-16zM30.031 16c0-7.719-6.313-14-14.031-14s-14 6.281-14 14 6.281 14 14 14 14.031-6.281 14.031-14z"
+                  ></path></svg
+                ><span></span>
+              </p>
+            </div>
+
+            <div class="bank-btns">
+              <a href="" class="bank-btn">Edit</a>
+              <a href="" class="bank-change-btn" style="pointer-events: none"
+                >Change to VPA</a
+              >
+              <a href="" class="bank-cfm-btn" style="pointer-events: none"
+                >Confirm</a
+              >
+              <img
+                src="img/tick.gif"
+                alt="Tick mark animation"
+                class="tick-mark bank-tick"
+                hidden
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="orders" class="orders-container tab">
+          <p class="orders-text">Orders</p>
+
+          <div class="no-orders">
+            <p>You have not placed any orders yet.</p>
+          </div>
+
+          <div class="sub-order-container">
+            <table class="order-table">
+              <tr>
+                <th>Order ID</th>
+                <th>Total amount</th>
+                <th>Order date</th>
+                <th>Status</th>
+                <th>View</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="tickets" class="tickets-container tab">
+          <p class="tickets-text">Tickets</p>
+
+          <div class="no-tickets">
+            <p>You have not raised any support tickets.</p>
+          </div>
+
+          <div class="sub-ticket-container">
+            <table class="ticket-table">
+              <tr>
+                <th>Ticket ID</th>
+                <th>Subject</th>
+                <th>Issue</th>
+                <th>Resolution</th>
+                <th>Status</th>
+                <th>View</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="settings" class="settings-container tab">
+          <p class="settings-text">Settings</p>
+
+          <p class="del-text">
+            Click below if you wish to delete your account.
+          </p>
+          <p class="del-desc">
+            Deleting your account deletes all data associated with it including
+            your personal data, orders, tickets and anything related to your
+            account.
+          </p>
+          <p class="del-warning">
+            <img
+              src="img/danger.gif"
+              alt="Danger animation"
+              class="danger"
+            />Your data is not recoverable in any way.
+          </p>
+          <a href="" class="del-acc-btn">Delete account</a>
+
+          <label class="del-cfm-label" hidden
+            >Type <strong>Confirm</strong> to delete your account
+            permanently!</label
+          >
+          <input type="text" class="del-cfm" autocomplete="off" hidden />
+          <a href="" class="del-cfm-btn" style="pointer-events: none" hidden
+            >Confirm deletion</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="js/header_footer.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
