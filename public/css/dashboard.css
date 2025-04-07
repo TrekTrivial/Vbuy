@@ -1,6 +1,12 @@
+.dash-super-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+}
+
 .dashb-container {
-  max-width: 100rem;
-  margin: 2rem auto;
+  max-width: 77rem;
+  margin: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,6 +16,7 @@
   border-radius: 0.7rem;
   min-height: 35rem;
   box-shadow: 0 0.5rem 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 
 a {
@@ -55,16 +62,18 @@ select {
 .sub-dashb-container {
   display: flex;
   align-items: flex-start;
+  max-width: 76rem;
 }
 
 .tabs-container {
   display: flex;
   flex-direction: column;
-  width: 12rem;
+  min-width: 12rem;
   height: 12rem;
   border: 0.2px solid rgba(195, 188, 196, 0.8);
   margin-top: 3rem;
   background: #ddd;
+  margin-bottom: 1rem;
 }
 
 .tabs-container a {
@@ -99,12 +108,12 @@ select {
 
 .prof-tabs-container {
   display: flex;
-  width: 60rem;
+  min-width: 60rem;
   background: #ddd;
 }
 
 .prof-tabs-container a {
-  width: 20rem;
+  min-width: 20rem;
   height: 3rem;
   font-weight: 550;
   text-align: center;
@@ -541,7 +550,6 @@ select {
 }
 
 .orders-container {
-  width: 60rem;
   display: flex;
   flex-direction: column;
   display: none;
@@ -569,11 +577,13 @@ select {
 
 .sub-order-container {
   margin-top: 1.2rem;
+  overflow-x: auto;
+  width: 100%;
 }
 
 .order-table {
   margin: 0 auto;
-  width: 90%;
+  width: 55rem;
   border-collapse: collapse;
   border: 0.2px solid #ccc;
 }
@@ -605,7 +615,11 @@ select {
 
 .order-table tr th:nth-child(4),
 .order-table tr td:nth-child(4) {
-  width: 10rem;
+  width: 7rem;
+}
+
+.order-table tr td:last-child {
+  width: 5rem;
 }
 
 .order-table tr td a {
@@ -626,7 +640,6 @@ select {
 }
 
 .tickets-container {
-  width: 60rem;
   display: flex;
   flex-direction: column;
   display: none;
@@ -654,11 +667,13 @@ select {
 
 .sub-ticket-container {
   margin-top: 1.2rem;
+  overflow-x: auto;
+  width: 100%;
 }
 
 .ticket-table {
   margin: 0 auto;
-  width: 90%;
+  width: 55rem;
   border-collapse: collapse;
   border: 0.2px solid #ccc;
 }
@@ -722,7 +737,6 @@ select {
 }
 
 .settings-text {
-  width: 60rem;
   height: 3rem;
   font-weight: 550;
   text-align: center;
@@ -734,9 +748,12 @@ select {
 
 .del-text,
 .del-desc,
-.del-warning,
-.settings-container input {
+.del-warning {
   width: 30rem;
+}
+
+.settings-container input {
+  max-width: 30rem;
 }
 
 .del-text {
@@ -818,4 +835,276 @@ select {
 
 .address-cfm-btn {
   margin-left: 0.8rem;
+}
+
+@media (max-width: 80em) {
+  .sub-dashb-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 67em) {
+  .dashb-container {
+    max-width: 60rem;
+  }
+
+  .sub-dashb-container {
+    max-width: 60rem;
+  }
+
+  .prof-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    justify-items: left;
+  }
+
+  .sub-prof-container {
+    margin-left: 1.2rem;
+  }
+
+  .prof-change-container {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .prof-tabs-container {
+    min-width: 39rem;
+  }
+
+  .prof-tabs-container a {
+    min-width: 13rem;
+  }
+
+  .orders-container {
+    max-width: 39rem;
+  }
+
+  .orders-text {
+    min-width: 39rem;
+  }
+
+  .tickets-container {
+    max-width: 39rem;
+  }
+
+  .tickets-text {
+    min-width: 39rem;
+  }
+
+  .settings-container {
+    max-width: 39rem;
+  }
+
+  .settings-text {
+    min-width: 39rem;
+  }
+}
+
+@media (max-width: 46em) {
+  .prof-tabs-container {
+    flex-direction: column;
+  }
+
+  .prof-tabs-container {
+    min-width: 30rem;
+  }
+
+  .prof-tabs-container a {
+    min-width: 30rem;
+  }
+
+  .dashb-container {
+    max-width: 30rem;
+  }
+
+  .sub-dashb-container {
+    max-width: 30rem;
+  }
+
+  .orders-text {
+    min-width: 0rem;
+  }
+
+  .orders-container,
+  .orders-text,
+  .sub-order-container {
+    max-width: 30rem;
+  }
+
+  .tickets-text {
+    min-width: 0rem;
+  }
+
+  .tickets-container,
+  .tickets-text,
+  .sub-ticket-container {
+    width: 30rem;
+  }
+
+  .settings-text {
+    min-width: 0rem;
+  }
+
+  .settings-container,
+  .settings-text {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 37em) {
+  .prof-tabs-container {
+    min-width: 21rem;
+  }
+
+  .prof-tabs-container a {
+    min-width: 21rem;
+  }
+
+  .dashb-container {
+    max-width: 21rem;
+  }
+
+  .sub-dashb-container {
+    max-width: 21rem;
+  }
+
+  .info-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .change-email,
+  .otp-btn,
+  .change-mobile,
+  .mobile-btn,
+  .change-pwd {
+    margin-left: 0;
+  }
+
+  .change-email,
+  .change-mobile,
+  .change-pwd {
+    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+  }
+
+  .orders-text {
+    min-width: 0rem;
+  }
+
+  .orders-container,
+  .orders-text,
+  .sub-order-container {
+    max-width: 21rem;
+  }
+
+  .tickets-text {
+    min-width: 0rem;
+  }
+
+  .tickets-container,
+  .tickets-text,
+  .sub-ticket-container {
+    max-width: 21rem;
+  }
+
+  .settings-text {
+    min-width: 0rem;
+  }
+
+  .settings-container,
+  .settings-text,
+  .del-text,
+  .del-desc,
+  .del-warning {
+    max-width: 21rem;
+  }
+}
+
+@media (max-width: 27em) {
+  .prof-tabs-container {
+    flex-direction: column;
+  }
+
+  .prof-tabs-container {
+    min-width: 14.7rem;
+  }
+
+  .prof-tabs-container a {
+    min-width: 14.7rem;
+  }
+
+  .dashb-container {
+    max-width: 13rem;
+  }
+
+  .sub-dashb-container {
+    max-width: 18rem;
+  }
+
+  .info-container,
+  .prof-change-container {
+    font-size: 0.9rem;
+  }
+
+  .sub-prof-container {
+    margin-left: 0;
+  }
+
+  .prof-change-container {
+    padding-left: 0;
+  }
+
+  .old-pwd,
+  .new-pwd,
+  .new-cfm-pwd {
+    width: 12rem;
+  }
+
+  .bank-btns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bank-btns a {
+    margin-left: 0;
+    margin-bottom: 0.6rem;
+  }
+
+  .address-container,
+  .bank-container {
+    margin-left: 0;
+  }
+
+  .orders-text {
+    min-width: 0rem;
+  }
+
+  .orders-container,
+  .orders-text,
+  .sub-order-container {
+    max-width: 14rem;
+  }
+
+  .tickets-text {
+    min-width: 0rem;
+  }
+
+  .tickets-container,
+  .tickets-text,
+  .sub-ticket-container {
+    max-width: 14rem;
+  }
+
+  .settings-text {
+    min-width: 0rem;
+  }
+
+  .settings-container,
+  .settings-text,
+  .del-text,
+  .del-desc,
+  .del-warning {
+    max-width: 14rem;
+  }
 }

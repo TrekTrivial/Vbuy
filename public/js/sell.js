@@ -137,7 +137,7 @@ const displayResults = books => {
         <p class="vbuy-price-text">VBuy price</p>
         <a href="#" class="add-to-cart" data-isbn="${ISBN_13}" data-price=${vbuyPrice}>
           <span class="vbuy-price">${
-            vbuyPrice === "N/A" ? "N/A" : `Rs. ${vbuyPrice}/- only`
+            vbuyPrice === "N/A" ? "N/A" : `Rs. ${vbuyPrice}/-`
           }</span>
           <span class="add-text">Add to cart</span>
         </a>

@@ -100,7 +100,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     data1[0].quantity.forEach(num => (totalItems += num));
 
     document.querySelector(".order-count").innerHTML = totalItems;
-    document.querySelector(".order-total").innerHTML = data1[0].cartTotal;
+    document.querySelector(
+      ".order-total"
+    ).innerHTML = `Rs. ${data1[0].cartTotal}.00`;
     document.querySelector(".cart-id").innerHTML = data1[0].cartID;
   } catch (e) {
     console.error(e);

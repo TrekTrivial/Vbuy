@@ -174,7 +174,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     } else if (data3.length > 0) {
       document.querySelector(".no-orders").style.display = "none";
       document.querySelector(".sub-order-container").style.display = "block";
-      const data3 = await response3.json();
       data3.forEach(addOrderRow);
     }
 

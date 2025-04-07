@@ -74,7 +74,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   data[0].quantity.forEach(num => (totalItems += num));
 
   document.querySelector(".order-count").innerHTML = totalItems;
-  document.querySelector(".order-total").innerHTML = data[0].cartTotal;
+  document.querySelector(
+    ".order-total"
+  ).innerHTML = `Rs. ${data[0].cartTotal}.00`;
 
   const response1 = await fetch(`${API_BASE_URL}/orders/shipping/${orderID}`, {
     method: "GET",
@@ -98,11 +100,25 @@ document.addEventListener("DOMContentLoaded", async () => {
   document
     .querySelector(".invoice-btn")
     .setAttribute("href", data1.invoiceLink);
-  document.querySelector(".ship-status").innerHTML = data1.shippingStatus;
-  document.querySelector(".awb").innerHTML = data1.AWBnumber;
+  document.querySelector(".ship-status").innerHTML =
+    data1.AWBnumber === "" ||
+    data1.AWBnumber === undefined ||
+    data1.AWBnumber === null
+      ? "Await pickup info"
+      : data1.shippingStatus;
+  document.querySelector(".awb").innerHTML =
+    data1.AWBnumber === "" ||
+    data1.AWBnumber === undefined ||
+    data1.AWBnumber === null
+      ? "N/A"
+      : data1.AWBnumber;
   document.querySelector(".ship").innerHTML = data1.ship_orderID;
   document.querySelector(".awb-name").innerHTML =
-    data1.AWB_transporter === "" ? "N/A" : data1.AWB_transporter;
+    data1.AWB_transporter === "" ||
+    data1.AWB_transporter === undefined ||
+    data1.AWB_transporter === null
+      ? "N/A"
+      : data1.AWB_transporter;
 
   const response2 = await fetch(`${API_BASE_URL}/orders/myorders/${orderID}`, {
     method: "GET",

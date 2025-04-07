@@ -1,5 +1,11 @@
+.track-super-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+}
+
 .track-container {
-  max-width: 100rem;
+  max-width: 31rem;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
@@ -8,7 +14,7 @@
   padding: 2rem;
   color: #252525;
   border-radius: 0.7rem;
-  min-height: 15rem;
+  min-height: 12rem;
   box-shadow: 0 0.5rem 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -74,7 +80,6 @@ label {
   padding: 0.3rem 0.8rem;
   border-radius: 0.3rem;
   transition: all 0.2s;
-  margin-left: 1rem;
 }
 
 .track-btn:link,
@@ -111,4 +116,62 @@ label {
   padding: 0.3rem 0;
   text-align: center;
   margin: 1rem 0;
+}
+
+@media (max-width: 40em) {
+  .track-container {
+    max-width: 30rem;
+  }
+
+  .awb {
+    width: 24rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .track-container {
+    max-width: 25rem;
+  }
+
+  .awb {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 29em) {
+  .track-container {
+    max-width: 20rem;
+  }
+
+  .awb {
+    width: 14rem;
+  }
+
+  .track-heading {
+    font-size: 1.6rem;
+  }
+
+  .awb-label {
+    font-size: 0.9rem;
+  }
+
+  .awb {
+    font-size: 0.8rem;
+  }
+
+  .track-btn {
+    font-size: 0.9rem;
+    width: 7rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 23em) {
+  .track-container {
+    max-width: 14rem;
+  }
+
+  .subject {
+    width: 11rem;
+  }
 }

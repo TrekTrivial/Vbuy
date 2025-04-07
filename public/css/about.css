@@ -44,3 +44,56 @@ label {
   width: 15rem;
   margin-top: 1rem;
 }
+
+@media (max-width: 60em) {
+  .about-super-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .about-heading {
+    font-size: 1.6rem;
+  }
+
+  .about-us-label,
+  .vision-label {
+    font-size: 1.2rem;
+  }
+
+  .about-us,
+  .vision {
+    font-size: 0.9rem;
+  }
+
+  .vbuy-logo {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .about-container {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+
+  .about-us-label,
+  .vision-label {
+    font-size: 1.1rem;
+  }
+
+  .about-us,
+  .vision {
+    font-size: 0.8rem;
+  }
+
+  .vbuy-logo {
+    width: 9rem;
+  }
+}

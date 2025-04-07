@@ -8,12 +8,14 @@
 /* SHADES  */
 /* #d9debb */
 /* ******* */
-/*  TINTS  */
-/*  */
 
 * {
   padding: 0;
   margin: 0;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 body {
@@ -22,6 +24,7 @@ body {
   grid-template-rows: 1fr auto;
   min-height: 100vh;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .header {
@@ -30,8 +33,10 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 0 0.8rem 0;
+  position: relative;
 
   background: #f9ffd7;
+  max-width: 100vw;
 }
 
 .logo {
@@ -42,7 +47,6 @@ body {
 }
 
 .navbar {
-  max-width: 42rem;
   margin-right: 2rem;
 }
 
@@ -65,7 +69,9 @@ li {
 
 .supp a,
 .track a,
-.about a {
+.about a,
+.dashboard a,
+.nav-logout-btn a {
   text-decoration: none;
   transition: all 0.2s;
 }
@@ -75,7 +81,11 @@ li {
 .track a:link,
 .track a:visited,
 .about a:link,
-.about a:visited {
+.about a:visited,
+.dashboard a:link,
+.dashboard a:visited,
+.nav-logout-btn a:link,
+.nav-logout-btn a:visited {
   color: #4e525f;
 }
 
@@ -130,7 +140,7 @@ li {
 
 .sell a {
   text-decoration: none;
-  padding: 5rem 1rem;
+  padding: 0.4rem 1rem;
 }
 
 .sell a:link,
@@ -264,11 +274,15 @@ li {
   display: none;
 }
 
+.nav-logout-btn {
+  display: none;
+}
+
 .footer-container {
   background: #4e525f;
   display: flex;
   justify-content: center;
-  width: 100%;
+  max-width: 100vw;
 }
 
 .footer {
@@ -278,7 +292,7 @@ li {
   column-gap: 4.2rem;
   justify-items: center;
   color: #d9debb;
-  max-width: 80rem;
+  max-width: 70rem;
   flex-grow: 1;
 }
 
@@ -366,4 +380,185 @@ li {
 
 .footer-link:hover {
   color: #ecefdd;
+}
+
+.show-hide-btns {
+  background: none;
+  border: none;
+  margin-right: 2rem;
+
+  display: none;
+}
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  fill: #4e525f;
+}
+
+.hide-icon {
+  display: none;
+}
+
+/* Media queries */
+
+@media (max-width: 79em) {
+  .footer {
+    column-gap: 3.2rem;
+    justify-items: center;
+  }
+
+  .footer div {
+    min-width: 10.2rem;
+  }
+
+  .footer-logo {
+    width: 8.2rem;
+  }
+
+  .icon-1 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-2 {
+    width: 36px;
+    height: 36px;
+  }
+
+  .icon-3 {
+    width: 42px;
+    height: 42px;
+  }
+
+  .founder-info p {
+    font-size: 0.8rem;
+  }
+
+  .contact-us p:nth-child(2),
+  .contact-us p:last-child {
+    font-size: 0.9rem;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+  }
+
+  .contact-us p:first-child,
+  .account p:first-child,
+  .company p:first-child {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 62em) {
+  .show-hide-btns {
+    display: block;
+    z-index: 1;
+  }
+
+  .navbar {
+    background: rgba(249, 255, 215, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .nav-open .dashboard:hover .dash-dropdown {
+    display: none;
+  }
+
+  .nav-open .dash-arrow-down {
+    display: none;
+  }
+
+  .nav-open .nav-logout-btn {
+    display: block;
+  }
+
+  .nav-open .navbar {
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .nav-open .hide-icon {
+    display: block;
+  }
+
+  .nav-open .show-icon {
+    display: none;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    margin: 0;
+    gap: 1.6rem;
+    font-size: 1.2rem;
+    width: 20rem;
+  }
+
+  .log-reg,
+  .dashboard {
+    width: 10rem;
+  }
+
+  .nav-items li {
+    margin: 0;
+  }
+
+  .footer {
+    column-gap: 2.8rem;
+  }
+
+  .footer div {
+    min-width: 9.6rem;
+  }
+
+  .contact-us p:nth-child(2) {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 53em) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 3rem;
+  }
+}
+
+@media (max-width: 26em) {
+  .footer {
+    grid-template-columns: 0;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    padding: 2rem 10rem 0 8rem;
+  }
+
+  .company {
+    height: fit-content;
+  }
 }

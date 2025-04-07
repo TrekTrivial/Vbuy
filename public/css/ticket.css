@@ -1,5 +1,11 @@
+.ticket-super-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+}
+
 .ticket-container {
-  max-width: 100rem;
+  max-width: 41rem;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
@@ -21,6 +27,7 @@ label {
 }
 
 .ticket-heading {
+  text-align: center;
   font-weight: 600;
   font-size: 2rem;
   letter-spacing: 1px;
@@ -92,4 +99,70 @@ label {
 
 .all-tickets-btn:hover {
   background: #009000;
+}
+
+@media (max-width: 45em) {
+  .ticket-container {
+    max-width: 32rem;
+  }
+}
+
+@media (max-width: 39em) {
+  .ticket-container {
+    max-width: 25rem;
+  }
+
+  .ticket-subject-container,
+  .ticket-message-container,
+  .ticket-reply-container,
+  .ticket-status-container {
+    flex-direction: column;
+  }
+
+  .ticket-btns {
+    flex-direction: column-reverse;
+  }
+
+  .new-ticket-btn,
+  .all-tickets-btn {
+    width: 9.4rem;
+    text-align: center;
+  }
+
+  .new-ticket-btn {
+    margin-left: 0;
+    margin-bottom: 0.6rem;
+  }
+}
+
+@media (max-width: 33em) {
+  .ticket-container {
+    max-width: 19rem;
+  }
+
+  .ticket-heading {
+    font-size: 1.6rem;
+  }
+
+  .ticket-subject-container,
+  .ticket-message-container,
+  .ticket-reply-container,
+  .ticket-status-container {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 26em) {
+  .ticket-container {
+    max-width: 14rem;
+  }
+
+  .ticket-heading {
+    font-size: 1.4rem;
+  }
+
+  .new-ticket-btn,
+  .all-tickets-btn {
+    font-size: 0.8rem;
+  }
 }

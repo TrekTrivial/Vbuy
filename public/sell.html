@@ -26,34 +26,36 @@
   <body>
     <div id="header-container"></div>
 
-    <section class="sell-container">
-      <p class="sell-heading">Sell a book</p>
+    <div class="sell-super-container">
+      <section class="sell-container">
+        <p class="sell-heading">Sell a book</p>
 
-      <div class="sub-sell-container">
-        <div class="search-bar-container">
-          <input
-            class="search-bar"
-            type="search"
-            placeholder="Search by title, author, ISBN"
-          />
-          <a href="" class="search-btn"
-            ><img src="img/search.png" alt="Search" class="search-icon"
-          /></a>
+        <div class="sub-sell-container">
+          <div class="search-bar-container">
+            <input
+              class="search-bar"
+              type="search"
+              placeholder="Search by title, author, ISBN"
+            />
+            <a href="" class="search-btn"
+              ><img src="img/search.png" alt="Search" class="search-icon"
+            /></a>
+          </div>
+
+          <div class="search-results-container"></div>
+
+          <p class="contact-us-text" style="font-size: 0.9rem">
+            <a href="/support">Contact us</a> if you don't see a price for your
+            book
+          </p>
+
+          <div class="pagination">
+            <button id="prev-btn" class="btn" disabled>Previous</button>
+            <button id="next-btn" class="btn">Next</button>
+          </div>
         </div>
-
-        <div class="search-results-container"></div>
-
-        <p class="contact-us-text" style="font-size: 0.9rem">
-          <a href="/support">Contact us</a> if you don't see a price for your
-          book
-        </p>
-
-        <div class="pagination">
-          <button id="prev-btn" class="btn" disabled>Previous</button>
-          <button id="next-btn" class="btn">Next</button>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <div id="footer-container"></div>
 
